@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+        <RelativeLayout
+            android:id="@+id/activity_login_signup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context="szk.nutriscan.LoginSignupActivity">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/logo_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/logo_name">
+            </ImageView>
+
+            <!-- TODO replace the false button with login fragment -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:text="@string/username"
+                android:id="@+id/email"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorPrimaryBright"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_marginTop="150dp"
+                android:hint="@string/enter_email"
+                android:inputType="textEmailAddress"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColorHint="@color/colorHint"
+                android:id="@+id/email_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textStyle="bold"
+                android:layout_marginTop="230dp"
+                android:id="@+id/pw"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorPrimaryBright"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:hint="@string/enter_password"
+                android:inputType="textPassword"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColorHint="@color/colorHint"
+                android:id="@+id/pw_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_below="@id/pw_text"
+                android:layout_margin="20dp"
+                android:id="@+id/err"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorErr"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_forgot_pw"
+                android:onClick="forgotMethod"
+                android:layout_marginTop="450dp"
+                android:text="@string/forgot_button"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/logo_name"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_login"
+                android:onClick="loginMethod"
+                android:layout_marginTop="450dp"
+                android:layout_toRightOf="@id/button_forgot_pw"
+                android:text="@string/login_button"
+                android:layout_below="@id/logo_name"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_signup"
+                android:onClick="registerMethod"
+                android:layout_marginTop="450dp"
+                android:layout_toLeftOf="@id/button_forgot_pw"
+                android:text="@string/register_button"
+                android:layout_below="@id/logo_name"/>
+
+        </RelativeLayout>
+
+</ScrollView>

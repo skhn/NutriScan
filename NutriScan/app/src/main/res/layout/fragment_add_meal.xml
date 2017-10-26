@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addmeal_frag_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="szk.nutriscan.AddMealFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/addmeal_title"
+        android:id="@+id/title_addmeal_frag"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="1dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_addmeal_frag"
+        android:layout_marginTop="7dp"
+        android:inputType="text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/title_for_mealname"
+        android:id="@+id/addmeal_string_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calories_addmeal"
+        android:id="@+id/calories_addmeal"
+        android:layout_marginTop="80dp"/>
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="80dp"
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/addmeal_enter"/>
+
+
+    <FrameLayout
+
+        class="szk.nutriscan.RecyclerAddMealFragment"
+        android:id="@+id/listfrag_addmeal_nutritions"
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="335dp">
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_item"
+        android:layout_below="@+id/addmeal_enter"
+        android:layout_marginTop="375dp"
+        android:layout_alignParentRight="true"
+        android:text="@string/add_settings"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

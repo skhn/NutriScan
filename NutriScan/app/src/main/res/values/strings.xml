@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">NutriScan</string>
+
+    <!-- LoginSignupActivity Button string -->
+    <string name="login_button">Login</string>
+    <string name="forgot_button">Forgot Password</string>
+    <string name="register_button">Register</string>
+    <string name="username">Email:</string>
+    <string name="password">Password:</string>
+    <string name="enter_email">Enter your email id here</string>
+    <string name="enter_password">Enter your password here</string>
+    <string name="enter_password_2">Enter your password again</string>
+    <string name="reg_email_hint">email@provider.com</string>
+    <string name="reg_pw">password</string>
+    <string name="reg_button">Register</string>
+    <string name="reg_cancel_button">Cancel</string>
+    <string name="settings_start_text">Add a new nutrient:</string>
+    <string name="settings_card_del">Delete</string>
+    <string name="settings_check_mess">Confirm Action by checking:</string>
+    <string name="add_settings">Add</string>
+    <string name="calories_settings">Daily caloric requirement:</string>
+    <string name="settings_caloric_set">Set</string>
+    <string name="addmeal_title">Add a Meal:</string>
+    <string name="dv_addmeal">DV in %</string>
+    <string name="calories_addmeal">Calories:</string>
+    <string name="nutrients_addmeal">Nutrients:</string>
+    <string name="title_for_mealname">Meal Name</string>
+
+
+    <!-- menu_dashboard -->
+    <string name="menu_settings">Settings</string>
+    <string name="menu_account">Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fragment">at Home</string>
+    <string name="favorits_in_home_fragment">Today\'s Nutrient Consumption:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--TODO: Temp string array for dahsboard listview list-
+        TODO: replace with material design -->
+
+    <string-array name="dashboard_list">
+        <item>Home</item>
+        <item>Scan</item>
+        <item>Add Meal</item>
+        <item>Month</item>
+    </string-array>
+
+    <!-- Drawer in dashboard open and close string -->
+
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <!-- ActionBar Name -->
+    <string name="settings_actionBar">Settings</string>
+    <string name="account_actionBar">Account</string>
+
+</resources>
